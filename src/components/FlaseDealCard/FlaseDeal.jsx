@@ -3,7 +3,7 @@ import React from 'react'
 function FlaseDeal(props) {
     return (
         <>
-            <div className='bg-white h-60 m-1 shadow-lg rounded-md md:h-[30rem]'>
+            <div className='bg-white bg h-60 m-1 shadow-lg rounded-md md:h-[30rem]'>
                 {/* product thumlain */}
                 <div className='flex h-[80%]'>
                     <img className='rounded-t-md w-full' src={props.thum} alt="" />

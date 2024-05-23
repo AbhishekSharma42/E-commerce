@@ -6,8 +6,12 @@ function MainCatagre() {
     return (
         <>
             <div>
-                <CatagrieTitle />
-                <CatagresCard />
+                <div className='pt-5 md:pt-14'>
+                    <CatagrieTitle />
+                </div>
+                <div>
+                    <CatagresCard />
+                </div>
             </div>
         </>
     )

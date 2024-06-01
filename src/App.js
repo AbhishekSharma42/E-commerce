@@ -7,6 +7,8 @@ import Login from './pages/Login';
 import AppContext from './Utils/Context';
 import ProductDetailCard from './pages/ProductDetailCard';
 import PageNotFound from './pages/PageNotFound';
+import Footer from './components/Footer/Footer';
+import Cart from './components/Cart/Cart';
 
 export default function App() {
   return (
@@ -19,8 +21,10 @@ export default function App() {
             <Route path="contact" element={<ContactUs />} />
             <Route path="LogIn" element={<Login />} />
             <Route path="product/:id" element={<ProductDetailCard />} />
+            <Route path="cart" element={<Cart />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
+          <Footer />
         </AppContext>
       </BrowserRouter>
     </div>

@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import OffersDescount from '../components/OffersDescounts/OffersDescount';
 import ProductsCard from '../components/ProductCards/ProductsCard';
 import { FcFlashOn } from 'react-icons/fc'
 import MainCatagre from '../components/CatagrresCard/MainCatagre';
+import BigDiscountTitle from '../components/BigDiscount/BigDiscountTitle';
 
 function Index() {
+
+  useEffect(() => {
+    document.title="YouWe Fashion"
+  },[])
+
   return (
     <>
       {/* Top Header productes card */}
@@ -19,6 +25,9 @@ function Index() {
       </div>
       <div>
         <MainCatagre />
+      </div>
+      <div>
+        <BigDiscountTitle />
       </div>
     </>
   )

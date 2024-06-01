@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../Utils/Context'
 
 
 function Login() {
+
+    const {appName } = useContext(Context);
     return (
         <>
             <div className="bg-gray-50 font-[sans-serif] text-[#333]">
                 <div className="min-h-screen flex flex-col items-center justify-center py-6 px-4">
                     <div className="max-w-md w-full border py-8 px-6 rounded border-gray-300 bg-white">
-                        <div>Shopipy</div>
+                        <div>{appName}</div>
                         <h2 className="text-center text-3xl font-extrabold">
                             Log in to your account
                         </h2>

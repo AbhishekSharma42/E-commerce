@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../Utils/Context'
 
 function ContactUs() {
+
+    const {contactUsHading } = useContext(Context);
     return (
         <>
 
             <div className="bg-amber-50 py-0 my-0 ">
                 <div id="Contact" className="mx-auto flex flex-col min-h-screen justify-center items-center">
 
-                    <h1 className="text-3xl font-bold leading-tight text-yellow-900 text-center">ShopyPi Contact Us</h1>
+                    <h1 className="text-3xl font-bold leading-tight text-yellow-900 text-center">{contactUsHading}</h1>
 
                     <form className="w-2/3 md:w-1/3 space-y-8 flex flex-col">
                         <div>
@@ -40,7 +43,7 @@ function ContactUs() {
                         </div>
                         <button
                             type="submit"
-                            className="bg-amber-950 text-amber-50 mx-auto mt-4 p-2 w-48">
+                            className="bg-amber-950 text-amber-50 mx-auto mt-4 p-2 w-48 hover:bg-red-500">
                             Submit
                         </button>
                     </form>

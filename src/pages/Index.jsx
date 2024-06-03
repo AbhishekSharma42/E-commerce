@@ -8,14 +8,15 @@ import BigDiscountTitle from '../components/BigDiscount/BigDiscountTitle';
 function Index() {
 
   useEffect(() => {
-    document.title="YouWe Fashion"
-  },[])
+    document.title = "YouWe Fashion"
+  }, [])
 
   return (
     <>
       {/* Top Header productes card */}
-      <div>
+      <div className=''>
         <OffersDescount />
+
       </div>
 
       {/* Flase deal productes cards*/}

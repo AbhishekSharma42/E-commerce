@@ -6,7 +6,7 @@ function OffersDescount() {
   return (
     <div className='bg-white md:h-[50vh] m-1 p-2 rounded-md md:grid-flow-row'>
       <Descount />
-      {/* <OfferCard /> */}
+     
     </div>
   )
 }

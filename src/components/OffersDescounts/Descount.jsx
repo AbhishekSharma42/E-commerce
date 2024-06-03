@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { Context } from '../../Utils/Context'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Descount() {
 
@@ -17,7 +18,7 @@ function Descount() {
             </div>
             <div className='right flex justify-center'>
                 <div className="sm:order-2 h-80 w-80 md:h-96 md:w-96 justify-center">
-                    <img className='h-80 ' src={`${TopBannerImg}`} alt="img tag" />
+                    <LazyLoadImage   effect="blur" className='h-80 ' src={`${TopBannerImg}`} alt="img tag" />
                 </div>
             </div>
         </div>

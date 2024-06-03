@@ -5,11 +5,20 @@ export const Context = newContext;
 
 const AppContext = (props) => {
 
+    // heandle search bar
+    const [openSearch, SetSearch] = useState(false);
+
+    const SearchBarHendle = () => {
+
+        if (openSearch === false) { SetSearch(true) }
+        else { SetSearch(false);}
+    }
+    // #######################################
+
     // Top Banner data handle
     const [TopBannerHeading] = useState("50% Off For Your First Shopping");
     const [TopBannerParagraph] = useState("Get GST invoice and save up to 18% on business purchases Classic and premium design with rotating bezel Track your workouts on your wrist.");
-    const [TopBannerImg] = useState("https://images.meesho.com/images/products/75970557/6kmep_512.webp");
-
+    const [TopBannerImg] = useState("https://imagescdn.thecollective.in/img/app/product/8/898415-10977834.jpg?w=900&amp;auto=format");
 
     // App Name Handle
     const [appName] = useState("YouWe Fashion");
@@ -26,7 +35,7 @@ const AppContext = (props) => {
     const [contactUsHading] = useState("YouWe Fashion Contact Us");
 
     return (
-        <Context.Provider value={{ appName, TopBannerHeading, TopBannerParagraph, TopBannerImg, FooteText, Phone, mail, contactUsHading }}>
+        <Context.Provider value={{ appName, TopBannerHeading, TopBannerParagraph, TopBannerImg, FooteText, Phone, mail, contactUsHading, openSearch, SetSearch, SearchBarHendle }}>
             {props.children}
         </Context.Provider>
     );

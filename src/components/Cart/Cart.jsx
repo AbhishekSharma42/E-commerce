@@ -1,5 +1,6 @@
 import React from 'react'
 import CartTitleBar from './CartTitleBar'
+import MainCart from './MainCart'
 
 const Cart = () => {
     return (
@@ -13,13 +14,17 @@ const Cart = () => {
                             <span className='font-bold md:text-xl mx-5 md:px-10'>0 items</span>
                         </div>
                         {/* <div className='h-1 w-auto bg-slate-400'></div> */}
-                        <hr className='w-[90%] h-2 mx-auto md:mt-8' />
+                        <hr className='w-[90%] h-2 mx-auto md:mt-8 ' />
 
-                        <CartTitleBar />
+                        <div className='hidden md:block'>
+                            <CartTitleBar />
+                        </div>
+
                         {/*item's cart's */}
-
-                        <div>
-
+                        <div className='mx-auto w-[90%] flex-col my-5'>
+                            <MainCart />
+                            <MainCart />
+                            <MainCart />
                         </div>
                     </div>
 
@@ -31,7 +36,7 @@ const Cart = () => {
                             <span className='uppercase'>Total &#x20B9;0</span>
                         </div>
                         <hr className='w-[90%] h-[3px] bg-slate-300 mx-auto mt-3 md:mt-8' />
-                        <div className='flex justify-center'>
+                        <div className='flex justify-center bottom-5'>
                             <button className='uppercase bg-blue-800 hover:bg-red-600 rounded-sm h-11 w-40 m-3 text-white mx-auto'>Checkout</button>
                         </div>
                     </div>

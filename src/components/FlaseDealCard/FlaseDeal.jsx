@@ -5,7 +5,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css'
 function FlaseDeal(props) {
     return (
         <>
-            <div className='bg-white bg h-60 m-1 shadow-lg rounded-md md:h-[30rem]'>
+            <div className='bg-white bg h-60 m-1 shadow-lg rounded-md md:w-[20rem] md:h-[25rem]'>
                 {/* product thumlain */}
                 <div className='flex h-[80%] w-full rounded-md justify-center'>
                     <LazyLoadImage alt='' className='rounded-t-md h-[100%] w-full' effect='blur' src={props.thum} />

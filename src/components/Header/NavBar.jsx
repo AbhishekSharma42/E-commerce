@@ -46,12 +46,12 @@ function NavBar() {
             <div className={` ${openSearch ? "-mt-0 sticky top-0 z-30 " : "-mt-20 z-0 "} transition-all duration-300`}>
                 <SearchBar />
             </div>
-            <div className={`z-40 sticky top-0 float-right bg-cyan-950 h-fit w-fit flex flex-col p-5 rounded-b-md mr-10 transition-all duration-200`} >
+            {/* <div className={`z-40 sticky top-0 float-right bg-cyan-950 h-fit w-fit flex flex-col p-5 rounded-b-md mr-10 transition-all duration-200`} >
                 <span className={`text-white hover:cursor-pointer hover:text-red-400 `} >My Account</span>
                 <span className='text-white hover:cursor-pointer hover:text-red-400'>My Wishlist</span>
                 <span className='text-white hover:cursor-pointer hover:text-red-400'>My Orders</span>
                 <span className='text-white hover:cursor-pointer hover:text-red-400'>Logout</span>
-            </div>
+            </div> */}
         </>
     )
 }

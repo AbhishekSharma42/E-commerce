@@ -9,6 +9,7 @@ import ProductDetailCard from './pages/ProductDetailCard';
 import PageNotFound from './pages/PageNotFound';
 import Footer from './components/Footer/Footer';
 import Cart from './components/Cart/Cart';
+import CustomDesign from './pages/CustomDesign'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="LogIn" element={<Login />} />
             <Route path="product/:id" element={<ProductDetailCard />} />
             <Route path="cart" element={<Cart />} />
+            <Route path='customize' element={<CustomDesign />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
           <Footer />
